@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.75, 17.625" name="fodeu">
+  <DataContextMoniker Name="/fodeuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c716c237-5117-40df-81b4-5af1e9f24f9f" absoluteBounds="3.5, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/fodeuDataContext/atendimento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="56227470-9fc4-4967-9fa1-6549d996fa7a" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b53b233-b8cd-466d-903f-dc710bbcfc42" absoluteBounds="0.75, 3.125, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/fodeuDataContext/cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="373c704c-7211-45d8-a021-b94d2174df23" absoluteBounds="0.765, 3.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98b5bcc2-75bd-45dd-935f-f4ef9dbd07c9" absoluteBounds="0.75, 14.125, 2, 3.3093082682291683">
+      <DataClassMoniker Name="/fodeuDataContext/fornecedore" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8107951c-97f0-49fd-8d73-b316c1a4f4f4" absoluteBounds="0.765, 14.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e498c4e-5d98-491a-b3c7-a002e4da3ddf" absoluteBounds="0.75, 9.625, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/fodeuDataContext/funcionario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0920cab6-25c0-45fe-b2e3-4522aaeee194" absoluteBounds="0.765, 10.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e450c7c5-ecb3-4900-9973-d68849d526ff" absoluteBounds="6.25, 3.875, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/fodeuDataContext/iten" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b24097d9-d0f0-411b-9346-7074efe6966b" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e04c8397-ab2a-4ba0-9f70-de3fc7364ea8" absoluteBounds="0.75, 7.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/fodeuDataContext/procedimento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6759c8e5-5e87-45e2-bc27-936811eae85d" absoluteBounds="0.765, 8.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5271f708-db7f-476c-8df6-8061f2994b78" absoluteBounds="3.5, 14.375, 2, 2.7324039713541683">
+      <DataClassMoniker Name="/fodeuDataContext/produto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="119cc71b-0b07-4fa2-b8d9-0dad6a75b20e" absoluteBounds="3.515, 14.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6cf8c5f3-325d-445e-8a3c-c1f199583f94" absoluteBounds="3.75, 7.25, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/fodeuDataContext/usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1391c692-aabf-4c99-92b7-07e52c8fa023" absoluteBounds="3.765, 7.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fdcaddcb-3bf7-440b-95e7-e2e4e788dcee" absoluteBounds="3.5, 4, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/fodeuDataContext/venda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c144950-57e1-49bb-b1c0-02a7b9253e42" absoluteBounds="3.515, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 3.125); (1.75 : 1.99262540136719); (3.04166666666667 : 1.99262540136719 : JumpStart); (3.36458333333333 : 1.99262540136719 : JumpEnd); (3.5 : 1.99262540136719)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/fodeuDataContext/cliente/cliente_atendimento" />
+      <nodes>
+        <classShapeMoniker Id="7b53b233-b8cd-466d-903f-dc710bbcfc42" />
+        <classShapeMoniker Id="c716c237-5117-40df-81b4-5af1e9f24f9f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.62653746153846); (3.125 : 9.25153746153846); (3.125 : 1.34006070068359); (3.5 : 1.34006070068359)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/fodeuDataContext/funcionario/funcionario_atendimento" />
+      <nodes>
+        <classShapeMoniker Id="7e498c4e-5d98-491a-b3c7-a002e4da3ddf" />
+        <classShapeMoniker Id="c716c237-5117-40df-81b4-5af1e9f24f9f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.95552987154447 : 5.64589680989583); (6.95552987154447 : 5.89589680989583); (7.55849251552484 : 5.89589680989583); (7.55849251552484 : 5.64589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/fodeuDataContext/iten/iten_iten" />
+      <nodes>
+        <classShapeMoniker Id="e450c7c5-ecb3-4900-9973-d68849d526ff" />
+        <classShapeMoniker Id="e450c7c5-ecb3-4900-9973-d68849d526ff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.95552987154447 : 3.875); (6.95552987154447 : 3.625); (7.55849251552484 : 3.625); (7.55849251552484 : 3.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/fodeuDataContext/iten/iten_iten1" />
+      <nodes>
+        <classShapeMoniker Id="e450c7c5-ecb3-4900-9973-d68849d526ff" />
+        <classShapeMoniker Id="e450c7c5-ecb3-4900-9973-d68849d526ff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.65714495227364); (3.06607443490112 : 7.34107051737252 : JumpStart); (3.18392556509888 : 7.22321938717476 : JumpEnd); (3.28125 : 7.12589495227364); (3.28125 : 1.34006070068359); (3.5 : 1.34006070068359)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/fodeuDataContext/procedimento/procedimento_atendimento" />
+      <nodes>
+        <classShapeMoniker Id="e04c8397-ab2a-4ba0-9f70-de3fc7364ea8" />
+        <classShapeMoniker Id="c716c237-5117-40df-81b4-5af1e9f24f9f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.7412019856771); (6.57151243577224 : 15.7412019856771); (6.57151243577224 : 5.64589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/fodeuDataContext/produto/produto_iten" />
+      <nodes>
+        <classShapeMoniker Id="5271f708-db7f-476c-8df6-8061f2994b78" />
+        <classShapeMoniker Id="e450c7c5-ecb3-4900-9973-d68849d526ff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.7412019856771); (3.5 : 15.7412019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/fodeuDataContext/fornecedore/fornecedore_produto" />
+      <nodes>
+        <classShapeMoniker Id="98b5bcc2-75bd-45dd-935f-f4ef9dbd07c9" />
+        <classShapeMoniker Id="5271f708-db7f-476c-8df6-8061f2994b78" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.69314697265625); (6.25 : 4.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/fodeuDataContext/venda/venda_iten" />
+      <nodes>
+        <classShapeMoniker Id="fdcaddcb-3bf7-440b-95e7-e2e4e788dcee" />
+        <classShapeMoniker Id="e450c7c5-ecb3-4900-9973-d68849d526ff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.69314697265625); (3.04166666666667 : 4.69314697265625 : JumpStart); (3.36458333333333 : 4.69314697265625 : JumpEnd); (3.5 : 4.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/fodeuDataContext/cliente/cliente_venda" />
+      <nodes>
+        <classShapeMoniker Id="7b53b233-b8cd-466d-903f-dc710bbcfc42" />
+        <classShapeMoniker Id="fdcaddcb-3bf7-440b-95e7-e2e4e788dcee" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="11cdb798-fa99-4054-97c9-55622689488b" absoluteBounds="12.5, 9.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/fodeuDataContext/cidade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35fab384-c59d-4173-96b4-ca5ca8ac6aff" absoluteBounds="12.515, 10.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

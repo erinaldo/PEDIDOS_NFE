@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98FF83B0-FEAC-49DB-9A56-31EC7E3C0CB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication3</RootNamespace>
+    <AssemblyName>WindowsFormsApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Utils\aprendizagem\Nova pasta\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EF142ACE46D45F88BB61977CC01EEC87B0394AAB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApplication3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="NFeEletronica, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NFeEletronica.5.4.0\lib\NFeEletronica.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conex.cs" />
+    <Compile Include="Conexaun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexaun.Designer.cs">
+      <DependentUpon>Conexaun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConexCidade.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgenda.Designer.cs">
+      <DependentUpon>FormAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadCFOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadCFOP.Designer.cs">
+      <DependentUpon>FormCadCFOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadProcedimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadProcedimento.Designer.cs">
+      <DependentUpon>FormCadProcedimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCidades.Designer.cs">
+      <DependentUpon>FormCidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCpagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCpagar.Designer.cs">
+      <DependentUpon>formCpagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreceber.Designer.cs">
+      <DependentUpon>FormCreceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEntProdutos.Designer.cs">
+      <DependentUpon>FormEntProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFornecedores.Designer.cs">
+      <DependentUpon>FormFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFuncionarios.Designer.cs">
+      <DependentUpon>FormFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNotaFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNotaFiscal.Designer.cs">
+      <DependentUpon>FormNotaFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPedido.Designer.cs">
+      <DependentUpon>FormPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProdutos.Designer.cs">
+      <DependentUpon>FormProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUsuario.Designer.cs">
+      <DependentUpon>frmCadUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelCadCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelCadCli.Designer.cs">
+      <DependentUpon>FrmRelCadCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelCpagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelCpagar.Designer.cs">
+      <DependentUpon>FrmRelCpagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelCreceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelCreceber.Designer.cs">
+      <DependentUpon>FrmRelCreceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelEstoque.Designer.cs">
+      <DependentUpon>FrmRelEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelVendas.Designer.cs">
+      <DependentUpon>FrmRelVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info.cs" />
+    <Compile Include="jarbasDataSet.cs">
+      <DependentUpon>jarbasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jarbasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jarbasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MeusFormularios.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="relCadForn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="relCadForn.Designer.cs">
+      <DependentUpon>relCadForn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="relDataSet.cs">
+      <DependentUpon>relDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="relDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="utils.cs" />
+    <EmbeddedResource Include="Conexaun.resx">
+      <DependentUpon>Conexaun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creceber.rdlc" />
+    <EmbeddedResource Include="FormCadCFOP.resx">
+      <DependentUpon>FormCadCFOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCpagar.resx">
+      <DependentUpon>formCpagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreceber.resx">
+      <DependentUpon>FormCreceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNotaFiscal.resx">
+      <DependentUpon>FormNotaFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUsuario.resx">
+      <DependentUpon>frmCadUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelCadCli.resx">
+      <DependentUpon>FrmRelCadCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelCpagar.resx">
+      <DependentUpon>FrmRelCpagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelCreceber.resx">
+      <DependentUpon>FrmRelCreceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelEstoque.resx">
+      <DependentUpon>FrmRelEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelVendas.resx">
+      <DependentUpon>FrmRelVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelCadCli.rdlc" />
+    <EmbeddedResource Include="relCadForn.resx">
+      <DependentUpon>relCadForn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelCadForncedores.rdlc" />
+    <EmbeddedResource Include="RelCpagar.rdlc" />
+    <EmbeddedResource Include="RelEstProduto.rdlc" />
+    <EmbeddedResource Include="relVendas.rdlc" />
+    <EmbeddedResource Include="repPedidoCerto.rdlc" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgenda.resx">
+      <DependentUpon>FormAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadProcedimento.resx">
+      <DependentUpon>FormCadProcedimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCidades.resx">
+      <DependentUpon>FormCidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntProdutos.resx">
+      <DependentUpon>FormEntProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFornecedores.resx">
+      <DependentUpon>FormFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFuncionarios.resx">
+      <DependentUpon>FormFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPedido.resx">
+      <DependentUpon>FormPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProdutos.resx">
+      <DependentUpon>FormProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="jarbasDataSet.xsc">
+      <DependentUpon>jarbasDataSet.xsd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jarbasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jarbasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jarbasDataSet.xss">
+      <DependentUpon>jarbasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NFeSchemas\2.0.0\cancNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\consCad_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\consReciNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\consSitNFe_v2.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\consStatServ_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\enviNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\inutNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\leiauteCancNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\leiauteConsSitNFe_v2.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\leiauteConsStatServ_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\leiauteConsultaCadastro_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\leiauteInutNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\leiauteNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\nfe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\procCancNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\procInutNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\procNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\retCancNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\retConsCad_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\retConsReciNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\retConsSitNFe_v2.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\retConsStatServ_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\retEnviNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\retInutNFe_v2.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\tiposBasico_v1.03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\2.0.0\xmldsig-core-schema_v1.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\consReciNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\consSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\consStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\enviNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\inutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\leiauteConsSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\leiauteConsStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\leiauteInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\leiauteNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\nfe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\procInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\procNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\retConsReciNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\retConsSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\retConsStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\retEnviNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\retInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\tiposBasico_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFeSchemas\3.1.0\xmldsig-core-schema_v1.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="relDataSet.xsc">
+      <DependentUpon>relDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="relDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>relDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="relDataSet.xss">
+      <DependentUpon>relDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\FormPadraun.csproj">
+      <Project>{3e5f2e5b-24d5-4c54-9b6b-8815411cdbd4}</Project>
+      <Name>FormPadraun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ducaun.dal\ducaun.dal.csproj">
+      <Project>{dec8e0c4-be1e-47dd-ba97-e22d729ef507}</Project>
+      <Name>ducaun.dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="ValidaCPF\ValidaCPF.csproj">
+      <Project>{24308f25-cb17-47d2-95a9-44a1e652979e}</Project>
+      <Name>ValidaCPF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Produsys marca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

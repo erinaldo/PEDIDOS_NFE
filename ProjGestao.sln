@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication3", "WindowsFormsApplication3\WindowsFormsApplication3.csproj", "{98FF83B0-FEAC-49DB-9A56-31EC7E3C0CB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormPadraun", "ClassLibrary1\FormPadraun.csproj", "{3E5F2E5B-24D5-4C54-9B6B-8815411CDBD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidaCPF", "WindowsFormsApplication3\ValidaCPF\ValidaCPF.csproj", "{24308F25-CB17-47D2-95A9-44A1E652979E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{64278B0E-CE04-4A15-841F-1C7051B03C73}"
+	ProjectSection(SolutionItems) = preProject
+		..\Users\produ\Desktop\banco18-11.sql = ..\Users\produ\Desktop\banco18-11.sql
+		Class1.cs = Class1.cs
+		WindowsFormsApplication3\EnviaEmail.cs = WindowsFormsApplication3\EnviaEmail.cs
+		..\Users\produ\Documents\scriptDucaun.sql = ..\Users\produ\Documents\scriptDucaun.sql
+		Utils.cs = Utils.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ducaun.dal", "ducaun.dal\ducaun.dal.csproj", "{DEC8E0C4-BE1E-47DD-BA97-E22D729EF507}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98FF83B0-FEAC-49DB-9A56-31EC7E3C0CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FF83B0-FEAC-49DB-9A56-31EC7E3C0CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FF83B0-FEAC-49DB-9A56-31EC7E3C0CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FF83B0-FEAC-49DB-9A56-31EC7E3C0CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5F2E5B-24D5-4C54-9B6B-8815411CDBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E5F2E5B-24D5-4C54-9B6B-8815411CDBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E5F2E5B-24D5-4C54-9B6B-8815411CDBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E5F2E5B-24D5-4C54-9B6B-8815411CDBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24308F25-CB17-47D2-95A9-44A1E652979E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24308F25-CB17-47D2-95A9-44A1E652979E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24308F25-CB17-47D2-95A9-44A1E652979E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24308F25-CB17-47D2-95A9-44A1E652979E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC8E0C4-BE1E-47DD-BA97-E22D729EF507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC8E0C4-BE1E-47DD-BA97-E22D729EF507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC8E0C4-BE1E-47DD-BA97-E22D729EF507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC8E0C4-BE1E-47DD-BA97-E22D729EF507}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
