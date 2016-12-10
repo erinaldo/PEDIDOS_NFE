@@ -236,7 +236,16 @@ namespace WindowsFormsApplication3
                 nota.ide.dEmi = mskDtVenda.Text;
                 nota.ide.tpNF = "1"; //normal contingencia
                 nota.ide.cMunFG = txtIbge.Text;
-                
+                nota.ide.tpImp = "1";
+                nota.ide.tpEmis = "1";
+                nota.ide.cDV = "0";                
+                nota.ide.idDest = "1";
+                nota.ide.indFinal = "0";
+                nota.ide.indPres = "0";
+                //nota.ide.tpAmb = "2";
+                nota.ide.finNFe = finalidadeNota;
+                nota.ide.procEmi = "3";// soft utilizado
+                nota.ide.
                
 
               
