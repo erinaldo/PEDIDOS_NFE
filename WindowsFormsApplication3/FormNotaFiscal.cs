@@ -218,14 +218,18 @@ namespace WindowsFormsApplication3
                 nota.ide.serie = txtSerie.Text;
                 //"select a.cod_produto, b.des_produto, a.ITP_QTDE, a.ITP_VALOR, a.ITP_TOTAL from ITEMPEDIDO a join produtos b on a.cod_produto = b.cod_produto where ped_codigo
                 string ultimoReg = "Select not_codigo From nota where not_codigo = (Select MAX(not_numero) From nota)";
+                string filial = "select * from filial where fil_codigo = ";
                 
                 SqlConnection con1 = new SqlConnection();
                 con.ConnectionString = Properties.Settings.Default.Ducaun;
                 SqlCommand cmd2 = new SqlCommand(ultimoReg, con1);
+                SqlCommand cmd3 = new SqlCommand(filial, con1);
 
 
                 con.Open();
                 SqlDataReader dR = cmd2.ExecuteReader();
+                SqlDataReader dr1 = cmd3.ExecuteReader();
+
 
                 if (dR.Read())
                 {
@@ -245,7 +249,27 @@ namespace WindowsFormsApplication3
                 //nota.ide.tpAmb = "2";
                 nota.ide.finNFe = finalidadeNota;
                 nota.ide.procEmi = "3";// soft utilizado
-                nota.ide.
+                
+                if (dr1.Read())
+                {
+                    nota.emit.CNPJ = dr1[9].ToString();
+                    nota.emit.xNome = dr1[1].ToString();
+                    nota.emit.xLgr = dr1[3].ToString();
+                    nota.emit.nro = dr1[10].ToString();
+                    nota.emit.xBairro = dr1[4].ToString();
+                    nota.emit.cMun = dr1[13].ToString();
+                    nota.emit.xMun = "Maringá";
+                    nota.emit.UF = "PR";
+                    nota.emit.CEP = "87070300";
+                    nota.emit.cPais = "1058";
+                    nota.emit.xPais = "Brasil";
+                    nota.emit.fone = "449988316578";
+                    nota.emit.IE = dr1[12].ToString();
+                    nota.emit.CRT = "1";
+                    
+                }
+                
+                
                
 
               
